@@ -203,6 +203,8 @@ Error message and password prompt
 
 <li>All the formats</li>
 
+<li>Draft of 'Makes numbered outlines'</li>
+
 <li>further test</li>
 
 <li>Github settings</li>
@@ -10151,8 +10153,8 @@ Error message and password prompt
 <div created="20210115065906887" modified="20210115065919890" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
-<div created="20210113160502456" modified="20210115065902840" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20210113160502456" modified="20210120072534752" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20210113160503820" modified="20210113161738333" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10160,13 +10162,13 @@ Error message and password prompt
 <div created="20210114020054821" modified="20210115064949326" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Shadows</pre>
 </div>
-<div created="20210113161801865" modified="20210115070306466" title="$:/state/tab/sidebar--595412856">
+<div created="20210113161801865" modified="20210120072734232" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210120072327801" list="$:/AdvancedSearch $:/ControlPanel [[that thing]] [[To Read]] Overview" modified="20210120072331288" title="$:/StoryList">
+<div created="20210120072736657" list="[[Sources used to mod numbered outline]] [[Draft of 'Makes numbered outlines']] Overview" modified="20210120072852163" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -10304,6 +10306,20 @@ Some ,,subscript text,, here
 
 This is `monospaced text` now [I don't know why it is red - or how to change it]</pre>
 </div>
+<div created="20210115065338547" draft.of="Makes numbered outlines" draft.title="Makes numbered outlines" modified="20210120072857353" tags="$:/tags/Stylesheet" title="Draft of 'Makes numbered outlines'">
+<pre>ol li {
+list-style-type: decimal-leading-zero;
+}
+ol ol li {
+list-style-type: lower-alpha;
+}
+ol ol ol li {
+list-style-type: lower-roman;
+}
+ol ol ol ol li {
+list-style-type: disc;
+}</pre>
+</div>
 <div created="20210114004346026" modified="20210114004809136" tags="" title="further test">
 <pre>why a 409 error??
 
@@ -10340,13 +10356,14 @@ ol ol ol ol li {
 list-style-type: disc;
 }</pre>
 </div>
-<div created="20210114055010467" modified="20210115075715189" tags="" title="Overview">
+<div created="20210114055010467" modified="20210120072940586" tags="" title="Overview">
 <pre># Obligations
 ## Find and record Sources of Obligations
 ### Full name
 ### Source / website
 ### Date identified/submitted
-### Name of person submitting it (in case they have strong views on the topic)
+### Name of person submitting it (in case they have strong
+#### test views on the topic)
 ## Review &amp; classify each Source of Obligations
 ### Person carrying out the review
 ### Date of Review starting
